@@ -1,4 +1,4 @@
-# csv-to-json-converter-for-Django-fixtures
+# csv to json converter for Django fixtures
 
 Two simple and practical algorithms that convert csv file into json in the format read by Django when loading fixtures.
 
