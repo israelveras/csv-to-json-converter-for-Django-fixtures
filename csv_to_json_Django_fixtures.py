@@ -12,7 +12,7 @@ def read_csv_write_json(csv_file, json_file, app_model):
         field = csv_r.fieldnames
         id = 0
         for row in csv_r:
-            id + 1
+            id = id + 1
             csv_row.extend(
                 [{"model": app_model, "pk": id, "fields": {field[i]: row[field[i]] for i in range(len(field))}}])
         converter_json(csv_row, json_output_file)
