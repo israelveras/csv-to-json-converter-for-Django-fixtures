@@ -19,7 +19,5 @@ def read_csv_write_json_setting_id(csv_file, json_file, app_model):
 def convert_write_json(data, json_file):
     with open(json_file, "w") as f:
         f.write(json.dumps(data, sort_keys=False, indent=4, separators=(',', ': ')))
-        f.write(json.dumps(data))
-
-
+        
 read_csv_write_json_setting_id(csv_path, json_output_file, model_name)
